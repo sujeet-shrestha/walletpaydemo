@@ -69,7 +69,7 @@
                 }
             )
             button.setEnv('preproduction_cba');
-            button.onUnavailable(() => console.log("No wallet buttons available", data));
+            button.onUnavailable(() => console.log("No wallet buttons available"));
             button.onPaymentSuccessful((data) => console.log('Payment Data', data));
             button.onPaymentError((data) => console.log("The payment was not successful", data));
             button.onPaymentInReview((data) => console.log("The payment is on fraud review", data));
