@@ -62,7 +62,8 @@
         }
         function generategooglePayButton() {
             let button = new cba.WalletButtons("#widget-google-Pay", token,
-                 amount_label: "Payment Amount",
+                                               {
+                                                   amount_label: "Payment Amount",
         country: "AU",
         wallet: ["apple"]
             },
