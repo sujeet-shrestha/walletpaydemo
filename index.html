@@ -62,10 +62,10 @@
         }
         function generategooglePayButton() {
             let button = new cba.WalletButtons("#widget-google-Pay", token,
-                {
-                    amount_label: "Payment Amount",
-                    country: "AU"
-                }
+                 amount_label: "Payment Amount",
+        country: "AU",
+        wallet: ["apple"]
+            },
             )
             button.setEnv('preproduction_cba');
             button.onUnavailable(() => console.log("No wallet buttons available"));
